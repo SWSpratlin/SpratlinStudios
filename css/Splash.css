@@ -1,0 +1,43 @@
+:root {
+    --dark: #261F1E;
+    --light: #F5EFE1;
+    --accent: #FCDA17;
+    --accent-dark: #D1B219;
+    --font: futura-pt, sans-serif;
+    --heavy: 700;
+    --thin: 300;
+    --book: 400;
+    font-size: 20vw;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    gap: .001rem;
+    max-width:1100px;
+}
+
+.logo{
+    flex:1 0 0;
+}
+
+.splashText{
+    max-width: 50%;
+    font-family: var(--font);
+    font-size: .13rem;
+    white-space: nowrap;
+    color: var(--light);
+    letter-spacing: .02rem;
+    bottom: 20em;
+    text-align: center;
+    align-self: flex-start;
+    flex: 0 1 auto;
+    padding-top: 0%;
+    /*background-color: red;*/
+}
