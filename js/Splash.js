@@ -1,6 +1,7 @@
 $(window).on("load", function(){
     logoIn();
     textIn();
+    footerIn();
 })
 
 function logoIn() {
@@ -22,8 +23,14 @@ function textIn() {
     }, 1000)
     $('#mainText').delay(2000).animate({
         opacity: '1'
-    }, 800)
+    }, 500)
     $('#subText').delay(2000).animate({
         opacity: '1'
-    }, 800)
+    }, 500)
+}
+
+function footerIn(){
+    $('#footer').delay(2500).animate({
+        opacity: '1'
+    }, 500)
 }

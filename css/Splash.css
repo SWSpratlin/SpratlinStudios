@@ -15,15 +15,15 @@ body {
 
 
 .title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
 }
 
 .container {
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -33,16 +33,18 @@ body {
     position: absolute;
 }
 
-.container :nth-child(1) {
-    order: 2
+#titleText{
+    order: 2;
 }
 
-.container :nth-child(2) {
-    order: 1
+#LogoL {
+    order: 1;
+    left: 36%;
 }
 
-.container :nth-child(3) {
-    order: 3
+#LogoR {
+    order: 3;
+    right: 36%;
 }
 
 .logo {
@@ -54,14 +56,17 @@ body {
     max-width: 200px;
 }
 
-#LogoL {
-    left: 36%;
+#soundLink{
+    order: 1;
 }
 
-#LogoR {
-    right: 36%;
+#interactiveLink{
+    order: 2;
 }
 
+#educationLink{
+    order:3;
+}
 
 .splashText {
     font-family: var(--font);
@@ -70,6 +75,11 @@ body {
     letter-spacing: 10px;
     text-align: center;
     will-change: width;
+}
+
+.link{
+    margin: 0 4% 0;
+    text-decoration: none;
 }
 
 #mainText {
@@ -188,5 +198,24 @@ body {
 .but:active span {
     transition: translate 0.2s cubic-bezier(0, 0.33, 0.33, 1);
     transform: scale3D(1, 1, 1);
+}
+
+#footer{
+    position:fixed;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.social{
+    padding: 15px 15px 0;
+    width: 40px;
+    height: auto;
 }
 
