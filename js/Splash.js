@@ -1,7 +1,22 @@
 $(window).on("load", function(){
-    logoIn();
-    textIn();
-    footerIn();
+    if($(window).width() > 850){
+        logoIn();
+        logoSpread();
+        textIn();
+        footerIn();
+    } else {
+        logoIn();
+        textIn();
+        footerIn();
+    }
+})
+
+$(window).on('resize', function(){
+    if ($(window).width() > 850){
+        logoSpread();
+    } else {
+        logoShrink();
+    }
 })
 
 function logoIn() {
@@ -11,13 +26,25 @@ function logoIn() {
     }, 1000, "easeOutQuint");
 }
 
-function textIn() {
-   $('#LogoL').delay(0).animate({
-       left: '0'
-   },800, "easeOutQuint")
+function logoSpread(){
+    $('#LogoL').delay(0).animate({
+        left: '0',
+    },800, "easeOutQuint")
     $('#LogoR').delay(0).animate({
         right: '0'
     }, 800, "easeOutQuint")
+}
+
+function logoShrink() {
+    $('#LogoL').delay(0).animate({
+        left: '2%',
+    }, 5, "easeOutQuint")
+    $('#LogoR').delay(0).animate({
+        right: '2%'
+    }, 5, "easeOutQuint")
+}
+
+function textIn() {
     $('.buttonContainer').delay(2300).animate({
         opacity: '1'
     }, 1000)

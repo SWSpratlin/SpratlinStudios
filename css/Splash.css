@@ -92,7 +92,7 @@ body {
 
 #subText {
     font-size: clamp(12px, 2vw, 34px);
-    font-weight: var(--thin);
+    font-weight: var(--book);
     white-space: nowrap;
     opacity: 0;
 }
@@ -214,8 +214,44 @@ body {
 }
 
 .social{
-    padding: 15px 15px 0;
-    width: 40px;
+    padding: 15px 20px 0;
+    width: 30px;
     height: auto;
 }
 
+@media (max-width: 850px){
+    body{
+
+    }
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #LogoR{
+        order:2;
+        right: 2%;
+    }
+    #LogoL{
+        left: 2%;
+    }
+    #titleText{
+        order:3;
+    }
+    .buttonContainer{
+        flex-flow: column;
+    }
+    .but{
+        top:50%;
+        width: 50%;
+        font-size: 1rem;
+        margin: 1% 0;
+    }
+    #mainText{
+        font-size: 2rem;
+    }
+
+    #subText{
+        margin-top: 5%;
+        font-size: 1.25rem;
+    }
+}

@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9dc4c3f2-4694-4046-88ac-ae09ab511d96" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Splash.html" beforeDir="false" afterPath="$PROJECT_DIR$/Splash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpratlinStudios.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/Splash.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Splash.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Logo_sep_L.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Logo_sep_R.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Splash.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Splash.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +86,7 @@
       <workItem from="1716568119294" duration="6772000" />
       <workItem from="1717079373722" duration="24000" />
       <workItem from="1717079601731" duration="35571000" />
-      <workItem from="1717213024879" duration="8006000" />
+      <workItem from="1717213024879" duration="14428000" />
     </task>
     <servers />
   </component>
