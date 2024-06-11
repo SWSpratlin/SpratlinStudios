@@ -1,0 +1,90 @@
+#footer {
+    opacity: 1 !important;
+}
+
+#heading {
+    width: 100%;
+    justify-self: center;
+    padding-top: max(5vh, 50px);
+}
+
+#head {
+    font-family: var(--font);
+    color: var(--light);
+    text-align: center;
+    font-size: clamp(20px, 5vw, 60px);
+    letter-spacing: 1rem;
+}
+
+#sub {
+    font-family: var(--font);
+    color: var(--accent);
+    font-weight: var(--thin);
+    font-size: clamp(10px, 2.56vw, 30px);
+    letter-spacing: 1rem;
+    text-align: center;
+    line-height: 10px;
+    margin-bottom: 5%;
+}
+
+#container {
+    position: relative;
+    top: 50%;
+    height: 100%;
+    width: 80%;
+    max-width: 1800px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: aqua;
+    opacity: 0;
+    align-content: stretch;
+}
+
+.cardLink {
+    text-decoration: none;
+    height: 25%;
+    min-height: 200px;
+    width: 40%;
+    min-width: 400px;
+    background-color: crimson;
+    margin:20px;
+}
+
+.card {
+    color: var(--light);
+    font-family: var(--font);
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    border-radius: 2vmin;
+    box-shadow: 0 10px 0 var(--accent-dark);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.cardImage{
+    width: 35%;
+    max-width: 150px;
+    margin: 0 5%;
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.image{
+    width: 100%;
+    border-radius: 2vmin;
+}
+
+.cardCopy{
+    justify-self: flex-end;
+    flex-shrink: 1;
+    background-color: crimson;
+    width: 60%;
+    height: 80%;
+    min-height: 150px;
+}
+
+.cardTitle{
+    line-height: 0;
+}

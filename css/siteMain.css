@@ -1,0 +1,194 @@
+:root {
+    --dark: #261F1E;
+    --light: #F5EFE1;
+    --accent: #FCDA17;
+    --accent-dark: #D1B219;
+    --font: futura-pt, sans-serif;
+    --bodyFont: baskerville-display-pt, serif;
+    --heavy: 700;
+    --thin: 300;
+    --book: 400;
+    overflow: auto;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+#title{
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+#headerContainer{
+    display: table-header-group;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,.5);
+    font-family: var(--font);
+}
+
+#headerWordMark{
+    width: 50px;
+    padding-left: 10px;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+#nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-self: flex-end;
+    align-self: center;
+    letter-spacing: .25rem;
+    font-size: 1.5rem;
+}
+
+.listItem{
+    float: right;
+    padding-right: 20px;
+}
+
+.navLink{
+    text-decoration: none;
+    color: var(--light);
+    font-weight: var(--thin);
+}
+
+#footer{
+    position:absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.social{
+    padding: 25px 20px 10px;
+    width: 30px;
+    height: auto;
+}
+
+.but {
+    letter-spacing: 5px;
+    font-family: var(--font);
+    font-weight: var(--book);
+    color: var(--light);
+    position: relative;
+    font-size: clamp(8px, 1.5vw, 24px);
+    text-align: center;
+    align-self: center;
+    border: none;
+    background: none;
+    margin: 0 10% 0;
+}
+
+.but_bg {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--dark);
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0, 0.33, 0.33, 1);
+}
+
+.but:hover .but_bg {
+    transform: scale3D(1.2, 1.2, 1);
+}
+
+.but_bg::after, .but_bg::before {
+    content: '';
+    position: absolute;
+    background: var(--accent);
+
+}
+
+.but_bg::before {
+    width: 110%;
+    height: 0;
+    padding-bottom: 110%;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 1);
+}
+
+.but:hover .but_bg::before {
+    transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+    transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+}
+
+.but_bg::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.but:hover .but_bg::after {
+    opacity: 1;
+    transition-duration: 0.01s;
+    transition-delay: 0.3s;
+}
+
+.but span {
+    display: block;
+    position: relative;
+}
+
+.but:hover span {
+    transition-duration: 0.4s;
+    color: var(--dark);
+    transform: scale3D(1.2, 1.2, 1);
+}
+
+.but:hover span::after {
+    transition-duration: 0.4s;
+    color: var(--light);
+}
+
+.but:active .but_bg {
+    transition: translate 0.2s cubic-bezier(0, 0.33, 0.33, 1);
+    transform: scale3D(1, 1, 1);
+}
+
+.but:active span {
+    transition: translate 0.2s cubic-bezier(0, 0.33, 0.33, 1);
+    transform: scale3D(1, 1, 1);
+}
+
+@media (max-width: 850px){
+    #nav{
+        font-size: .75rem;
+    }
+}
