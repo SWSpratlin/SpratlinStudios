@@ -89,13 +89,20 @@
     width: fit-content;
 }
 
+#footer{
+    position: fixed !important;
+    bottom: 0 !important;
+}
+
 @media screen and (orientation: landscape){
 }
 
 @media (max-device-width: 500px) and (orientation:portrait){
     .container{
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
     }
     #LogoR{
         order:2;
@@ -108,13 +115,17 @@
         order:3;
     }
     .buttonContainer{
+        display: flex;
         flex-flow: column;
+        align-items: center;
     }
     .but{
+        display: flex;
+        justify-items: center;
         top:50%;
-        width: 40%;
+        width: 100%;
         font-size: 2rem !important;
-        margin: 1.5% 0 !important;
+        margin: 4% 0 !important;
     }
     #mainText{
         font-size: 4rem;
